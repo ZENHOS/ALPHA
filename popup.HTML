@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup - Zen-Host</title>
+    <style>
+        body {
+            background-color: #40E0D0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333333;
+        }
+        
+        p {
+            color: #333333;
+        }
+        
+        .logo {
+            width: 2cm;
+            height: 2cm;
+            cursor: pointer;
+        }
+        
+        .button {
+            background-color: #40E0D0;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://tally.so/widgets/embed.js"></script>
+    <script>
+        function goToHomePage() {
+            window.location.href = "index.html";
+        }
+        
+        function openTallyPopup() {
+            Tally.openPopup('w4BOEr');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://storage.googleapis.com/tally-block-assets/25276d37-11d1-4b10-989f-d6b6708e3a0a/facebook_profile_image.png" alt="Logo Zen-Host" class="logo" onclick="goToHomePage()">
+        <h1>Zen-Host</h1>
+        <p>Ceci est la page de la popup.</p>
+        
+        <button class="button" onclick="openTallyPopup()">NOW</button>
+    </div>
+</body>
+</html>
